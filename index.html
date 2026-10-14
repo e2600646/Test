@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Esittelyssä Janica Torkko</title>
+    <!-- Defer lataa skriptin taustalla ja ajaa sen vasta kun HTML on valmis -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>API-datan noutaminen</h1>
+    <p>Paina nappia hakeaksesi uuden neuvon rajapinnasta:</p>
+
+    <div class="api-osio">
+        <label for="maara">Neuvojien määrä:</label>
+        <select id="maara">
+            <option value="1">1 neuvo</option>
+            <option value="3">3 neuvoa</option>
+            <option value="5">5 neuvoa</option>
+        </select>
+        
+        <button id="haeNappi">Hae uusi neuvo</button>
+        <div id="adviceContainer">Valitse määrä ja hae neuvot</div>
+        <p id="statusMessage"></p>
+    </div>
+
+    <header>
+        <h1>Janica Torkko - Sovelluskehitys</h1>
+        <h2>Opiskelijanumero e2600646</h2>
+    </header>
+
+    <main>
+        <p>Lyhyesti hieman itsestäni:</p>
+        <p>Olen paljasjalkainen vaasalainen, liiketalouden tradenomi.</p>
+        <p>Tällä hetkellä myös opiskelen <a href="https://www.vamk.fi" target="_blank">VAMKissa</a>.</p>
+
+        <h2>Koirat</h2>
+        <div class="koira-kuvat">
+            <div class="koira-kortti">
+                <h3>Armi</h3>
+                <img src="Armi.jpg" alt="Koirani Armi">
+            </div>
+
+            <div class="koira-kortti">
+                <div class="otsikko-rivi">
+                    <h3>Satunnainen koira</h3>
+                    <button id="koiraNappi">Hae koiran kuva</button>
+                </div>
+                <img id="koiraKuva" src="" alt="Satunnainen koira">
+            </div>
+        </div>
+
+        <section class="box-container"> 
+            <div class="box">
+                <h3>Armi on</h3>
+                <ul>
+                    <li>Rottweiler</li>
+                    <li>Veteraani-ikäinen, eli jo 8-vuotias</li>
+                    <li>Meidän perheen neljäs Rottweiler</li>
+                </ul>
+            </div>
+            
+            <div class="box">
+                <h3>Armi harrastaa</h3>
+                <ul>
+                    <li>Rallitokoa</li>
+                    <li>Lenkkeilyä</li>
+                    <li>Pyykkien keräämistä</li>
+                    <li>Roskien ja pullojen kierrätystä</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="contact.html">Yhteystiedot</a>
+            <button id="terveystuloksetNappi">Näytä terveystulokset</button>
+        </nav>
+    </footer>
+
+</body>
+</html>
